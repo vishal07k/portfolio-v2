@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d6f95564af.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/vk_logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Developer</p>
+                <h1>Hi, I'm <span>Vishal</span><br>from Ahmednagar</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-100">
+                    <h1 class="sub-title header-center">About me</h1>
+                    <div class="glass-panel">
+                        <p class="about-bio">I am an enthusiastic and dedicated Computer Science graduate eager to embark on a challenging career within an IT company. With a solid academic foundation and a keenness to apply my programming skills in a professional setting, I am committed to contributing to the success of projects. My proven ability to work effectively within a team-oriented environment, coupled with a strong dedication to continuous learning, positions me to stay adaptable and responsive to the ever-changing demands of the tech industry.</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <div class="skills-grid">
+                                <div class="skill-badge"><span>Java Ecosystem</span><p>J2EE, J2SE, Spring Boot, Hibernate</p></div>
+                                <div class="skill-badge"><span>Web Technologies</span><p>HTML, CSS, JavaScript, ReactJS</p></div>
+                                <div class="skill-badge"><span>Node & Express</span><p>Node.js, Express.js Architecture</p></div>
+                                <div class="skill-badge"><span>Databases</span><p>MySQL, PostgreSQL, MongoDB</p></div>
+                                <div class="skill-badge"><span>Core Concepts</span><p>C Language, DSA, Microservices</p></div>
+                                <div class="skill-badge"><span>Tools & DevOps</span><p>Git, Docker, Postman, VS Code, IntelliJ</p></div>
+                            </div>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul class="clean-list">
+                                <li><span>Trainee at InfoBeans Foundation, Pune</span><br>June 2024 - June 2025
+                                    <br>Participated in a comprehensive training program to master Java, SQL, HTML, CSS, ReactJS, and Spring Boot.
+                                    <br>Contributed to project development, assisted with code reviews, and supported requirements gathering and workflow analysis.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul class="clean-list">
+                                <li><span>BSc Computer Science (2024)</span><br>Savitribai Phule Pune University (CGPA: 9.06)</li>
+                                <li><span>HSC (2021)</span><br>Maharashtra State Board, Pune (Percentage: 85.67%)</li>
+                                <li><span>SSC (2019)</span><br>Maharashtra State Board, Pune (Percentage: 83.00%)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--services-->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Developer</h2>
+                    <p>I build fully responsive and scalable websites using HTML, CSS, JavaScript, and backend
+                        frameworks. My focus is on writing clean, modular code to create seamless user experiences and
+                        robust web architectures.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>App Developer</h2>
+                    <p>I develop intuitive, user-friendly applications from the ground up prioritizing performance,
+                        security, and maintainability across various environments and platforms to solve complex
+                        business needs.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h2>Backend Developer</h2>
+                    <p>I design and implement server-side logic, databases using SQL/JDBC, and robust API endpoints with
+                        Java and modern backend frameworks, ensuring smooth communication and data flow across the
+                        stack.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Portfolio-->>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Images/bus_mockup.png" alt="">
+                    <div class="layer">
+                        <h3>Bus Management App</h3>
+                        <p>This project developed using Java Swing,
+                            integrates a Bus Management System with JDBC
+                            connectivity. It enables to perform various operations
+                            like bus route management, bus driver and conductor
+                            management and ticket booking etc.</p>
+                        <a
+                            href="https://github.com/vishal07k/Projects/tree/main/Bus%20Management%20System/Source%20Code"><i
+                                class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/media_mockup.png" alt="">
+                    <div class="layer">
+                        <h3>Calibration Certificate MS</h3>
+                        <p>Built using Spring Boot, React.js, JWT, and Apache POI. Features role-based auth, automated email notifications, and dynamically generated Excel calibration certificates.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/music_mockup.png" alt="">
+                    <div class="layer">
+                        <h3>Movie Booking App</h3>
+                        <p>RESTful Movie Booking System built with Spring Boot, MySQL, and Thymeleaf. Handles secure user login, ticket booking, email confirmations, and dynamic theater admin dashboards.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/grocery_mockup.png" alt="">
+                    <div class="layer">
+                        <h3>GreenCart Grocery System</h3>
+                        <p>Comprehensive e-commerce platform featuring secure authentication, an analytics-driven admin dashboard, robust order validation, and advanced product filtering capabilities.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/vishal07k/Projects/tree/main" class="btn">See More</a>
+        </div>
+    </div>
+    <!--Contact-->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>khamkarvishal6@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>9373971472</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/vishal07k"><i class="fa-brands fa-github"></i></a>
+                        <a
+                            href="https://www.linkedin.com/in/%E1%B4%A0%C9%AA%EA%9C%B1%CA%9C%E1%B4%80%CA%9F-%E1%B4%8B%CA%9C%E1%B4%80%E1%B4%8D%E1%B4%8B%E1%B4%80%CA%80-30b80a27a/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/_vishal_khamkar_07_/"><i
+                                class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="Images/VishalKhamkarResume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" row="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Vishal, made by vishal <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove('active-link');
+
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove('active-tab');
+
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxTCp4GW8EUY4VqcD7sx5hG1CxcJ8XVDsEjDiAzGPxLGlEK72Z_Bgah8cWAufTfFM3buw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg");
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
