@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>my work</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d6f95564af.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="header">
+    <div class="container">
+        <nav>
+            <img src="Images/vk_logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="work.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+    </div>
+</div>
+<!--Portfolio-->>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/bus_mockup.png" alt="">
+                <div class="layer">
+                    <h3>Bus Management App</h3>
+                    <p>This project developed using Java Swing,
+                        integrates a Bus Management System with JDBC
+                        connectivity. It enables to perform various operations
+                        like bus route management, bus driver and conductor
+                        management and ticket booking etc.</p>
+                    <a
+                            href="https://github.com/vishal07k/Projects/tree/main/Bus%20Management%20System/Source%20Code"><i
+                            class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/media_mockup.png" alt="">
+                <div class="layer">
+                    <h3>Calibration Certificate MS</h3>
+                    <p>Built using Spring Boot, React.js, JWT, and Apache POI. Features role-based auth, automated
+                        email notifications, and dynamically generated Excel calibration certificates.</p>
+                    <a href="https://github.com/vishal07k/Calibration-System.git"><i
+                            class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/music_mockup.png" alt="">
+                <div class="layer">
+                    <h3>Movie Booking App</h3>
+                    <p>RESTful Movie Booking System built with Spring Boot, MySQL, and Thymeleaf. Handles secure
+                        user login, ticket booking, email confirmations, and dynamic theater admin dashboards.</p>
+                    <a href="https://github.com/vishal07k/Movie-Booking-System-Spring-Boot-.git"><i
+                            class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/grocery_mockup.png" alt="">
+                <div class="layer">
+                    <h3>GreenCart Grocery System</h3>
+                    <p>Comprehensive e-commerce platform featuring secure authentication, an analytics-driven admin
+                        dashboard, robust order validation, and advanced product filtering capabilities.</p>
+                    <a href="https://github.com/vishal07k/grosary-management-system.git"><i
+                            class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/vishal07k" class="btn">See More</a>
+    </div>
+</div>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu() {
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu() {
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+</body>
+</html>
