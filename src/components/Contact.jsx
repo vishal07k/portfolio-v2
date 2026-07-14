@@ -18,7 +18,7 @@ export default function Contact() {
   const [isCopied, setIsCopied] = useState(false);
 
   // PLACEHOLDER: Replace this URL with your deployed Google Apps Script Web App URL
-  const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxTCp4GW8EUY4VqcD7sx5hG1CxcJ8XVDsEjDiAzGPxLGlEK72Z_Bgah8cWAufTfFM3buw/exec';
+  const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzZ1v-4v2FnLDrSQyRjurxTp6mR9SDYt2Uh8tXZlfC7RKfzDF670d8hcTaMDMDjNcgK/exec';
 
   const validate = () => {
     const newErrors = {};
@@ -83,7 +83,7 @@ export default function Contact() {
         body: JSON.stringify(formData),
       });
 
-      if (APPS_SCRIPT_URL.includes('https://script.google.com/macros/s/AKfycbxTCp4GW8EUY4VqcD7sx5hG1CxcJ8XVDsEjDiAzGPxLGlEK72Z_Bgah8cWAufTfFM3buw/exec')) {
+      if (APPS_SCRIPT_URL.includes('https://script.google.com/macros/s/AKfycbzZ1v-4v2FnLDrSQyRjurxTp6mR9SDYt2Uh8tXZlfC7RKfzDF670d8hcTaMDMDjNcgK/exec')) {
         // If placeholder URL is active, simulate submission for demo
         setTimeout(() => {
           setStatus('success');
@@ -100,7 +100,7 @@ export default function Contact() {
       }
     } catch (error) {
       console.error('Submission error:', error);
-      if (APPS_SCRIPT_URL.includes('https://script.google.com/macros/s/AKfycbxTCp4GW8EUY4VqcD7sx5hG1CxcJ8XVDsEjDiAzGPxLGlEK72Z_Bgah8cWAufTfFM3buw/exec')) {
+      if (APPS_SCRIPT_URL.includes('https://script.google.com/macros/s/AKfycbzZ1v-4v2FnLDrSQyRjurxTp6mR9SDYt2Uh8tXZlfC7RKfzDF670d8hcTaMDMDjNcgK/exec')) {
         setTimeout(() => {
           setStatus('success');
           setFormData({ name: '', phone: '', email: '', requirements: '' });
